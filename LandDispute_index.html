@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribal Land Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tribal Land Request System</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#request-land">Request Land</a></li>
+                <li><a href="#register-petition">Register Petition</a></li>
+                <li><a href="#land-information">Land Information</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>This platform allows tribal people to manage land requests and disputes.</p>
+            <button onclick="scrollToSection('request-land')">Request Land</button>
+            <button onclick="scrollToSection('register-petition')">Register Petition</button>
+            <button onclick="scrollToSection('land-information')">Land Information</button>
+        </section>
+
+        <section id="request-land">
+            <h2>Request Land</h2>
+            <form id="landRequestForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Contact Information" required>
+                <textarea placeholder="Land Description" required></textarea>
+                <textarea placeholder="Purpose of Request" required></textarea>
+                <input type="file" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="register-petition">
+            <h2>Register Petition</h2>
+            <form id="petitionForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Contact Information" required>
+                <textarea placeholder="Dispute Description" required></textarea>
+                <textarea placeholder="Parties Involved" required></textarea>
+                <input type="file" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="land-information">
+            <h2>Land Information</h2>
+            <input type="text" placeholder="Search Land Information">
+            <button onclick="searchLand()">Search</button>
+            <div id="searchResults"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <address>
+                <p>Contact us at: info@example.com</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tribal Land Application. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
